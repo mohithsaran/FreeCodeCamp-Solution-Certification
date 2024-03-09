@@ -1,8 +1,0 @@
-//Chain Middleware to Create a Time Server
-
-app.get('/now', (req,res,next)=>{
-    req.time=new Date().toString()
-    next()
-},//chaining to this function(req,res)=>{
-    res.json({time: req.time})
-})
