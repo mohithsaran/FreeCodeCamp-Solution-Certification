@@ -1,0 +1,5 @@
+//Use body-parser to Parse POST Requests
+
+const bodyParser=require('body-parser')
+
+app.use(bodyParser.urlencoded({extended: false}))
