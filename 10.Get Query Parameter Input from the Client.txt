@@ -1,7 +1,0 @@
-//Get Query Parameter input from client
-app.get('/name',(req,res)=>{
-    let firstname=req.query.first
-    let last=req.query.last
-
-    res.json({ name:`${firstname} ${last}`})
-})
