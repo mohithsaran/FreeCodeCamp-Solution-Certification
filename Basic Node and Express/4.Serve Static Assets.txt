@@ -1,0 +1,4 @@
+//Serve Static Assets like CSS to HTML
+
+app.use('/public',express.static(__dirname + '/public')
+)
