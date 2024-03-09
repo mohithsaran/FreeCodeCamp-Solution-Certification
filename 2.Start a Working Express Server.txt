@@ -1,5 +1,0 @@
-//Put this part of code in myApp.js
-
-app.get("/",(req,res)=>{
-    res.send("Hello Express")
-})
