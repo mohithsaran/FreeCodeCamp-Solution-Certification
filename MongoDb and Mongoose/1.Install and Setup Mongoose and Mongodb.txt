@@ -1,0 +1,12 @@
+//Create a cluster in MongoAtlas
+//Create a user in Database access
+//Create a collection in database from deployment
+//Click on connect and click Connect and click MongoDb for VS Code
+//copy the link in the form of '"mongodb+srv://user:<password>@cluster0.ccbfmcx.mongodb.net/"
+//enter the user and password which was created in 2nd step
+
+//Create .env file
+MONGO_URI='url paste here'
+
+//myApp.js
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });

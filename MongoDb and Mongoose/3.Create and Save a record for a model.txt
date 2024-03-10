@@ -1,0 +1,10 @@
+//Create and Save a Record of a Model
+const createAndSavePerson = (done) => {
+  let mohith=new Person({name:'Mohith',age:23,favoriteFoods:['D','I']})
+
+  mohith.save(function(err, data) {
+      if (err) return console.error(err);
+      done(null, data)
+    });
+  
+};

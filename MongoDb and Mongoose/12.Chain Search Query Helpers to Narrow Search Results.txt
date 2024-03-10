@@ -1,0 +1,12 @@
+
+const queryChain = (done) => {
+  const foodToSearch = "burrito";
+  Person.find({ favoriteFoods:{$all:[foodToSearch]}})
+  .sort({ name: 'asc'})
+  .limit(2)
+  .select('-age')
+  .exec((err, people)=> {
+    if(err) return console.log(err);
+    done(null, people);
+  });
+};
